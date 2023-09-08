@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
     <title>Riot Games</title>
 </head>
+
 <body>
     <main>
         <section class="login">
-            <img src="img/logo.png" alt="logo">
+            <img src="img/riot.svg" alt="logo" class="login-logo">
+
+            <h1 class="login-title">Fazer login</h1>
+
+            <label class="login-label">
+                <span>nome de usuario</span>
+                <input type="text" name="username" class="input">
+            </label>
+
+            <label class="login-label">
+                <span>senha</span>
+                <input type="password" name="password" class="input">
+            </label>
+
+            <div class="login-icons">
+                <button class="icons-button">
+                    <img src="img/baseline-facebook.svg" alt="facebook">
+                </button>
+                <button class="icons-button">
+                    <img src="img/google.svg" alt="">
+                </button>
+                <button class="icons-button">
+                    <img src="img/apple.svg" alt="">
+                </button>
+                <button class="icons-button">
+                    <img src="img/xbox-fill.svg" alt="">
+                </button>
+            </div>
+
+            <label class="login-label--checkbox">
+                <input type="checkbox" class="input--checkbox">
+                Manter login
+            </label>
+
+            <button disabled="disabled" class="login-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g transform="rotate(90 10 10) translate(20 0) scale(-1 1)"><path fill="currentColor" d="M9 3.828L2.929 9.899L1.515 8.485L10 0l.707.707l7.778 7.778l-1.414 1.414L11 3.828V20H9V3.828z"/></g></svg>
+            </button>
+
+            <a href="#" class="login-link">Não consegue inicar sessão?<a>
+            <a href="#" class="login-link">Criar conta</a>
         </section>
         <section class="wallpaper"></section>
     </main>
     <script src="script/main.js"></script>
 </body>
+
 </html>
